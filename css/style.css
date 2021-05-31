@@ -26,6 +26,9 @@
 .nav_profile {
   display: none;
 }
+.nav_profile img {
+  border-radius: 50%;
+}
 .nav_menu {
   width: 50%;
   display: flex;
@@ -127,6 +130,7 @@
 .main_community .card_bottomBar_profile img {
   margin-right: 10px;
   width: 24px;
+  border-radius: 50%;
 }
 
 .code {
@@ -349,7 +353,7 @@ body {
   .nav_search {
     width: 100%;
   }
-  .nav .bars {
+  .nav .hamburguer {
     display: none;
   }
   .nav_profile {
