@@ -358,9 +358,6 @@ body {
     align-items: center;
     justify-content: flex-end;
   }
-  .nav_profile:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-  }
   .nav_profile img {
     margin-right: 10px;
     width: 32px;
@@ -392,6 +389,15 @@ body {
   .asideLeft_pages a.community {
     color: rgba(255, 255, 255, 0.5);
   }
+  .asideLeft_pages img.community {
+    opacity: 50%;
+  }
+  .asideLeft_pages.community img.index {
+    opacity: 50%;
+  }
+  .asideLeft_pages.community img.community {
+    opacity: 100%;
+  }
   .asideLeft_icone {
     width: 48px;
     height: 48px;
@@ -401,10 +407,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .asideLeft_icone i {
-    color: #ffffff;
-    font-size: 16px;
   }
   .asideLeft_icone:focus {
     background-color: #96b9fd;

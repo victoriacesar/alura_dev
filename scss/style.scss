@@ -145,10 +145,6 @@ body {
       align-items: center;
       justify-content: flex-end;
 
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.08);
-      }
-
       & img {
         margin-right: 10px;
         width: 32px;
@@ -184,6 +180,20 @@ body {
       & a.community {
         color: rgba(255, 255, 255, 0.5);
       }
+
+      & img.community {
+        opacity: 50%;
+      }
+
+      &.community {
+        & img.index {
+          opacity: 50%;
+        }
+
+        & img.community {
+          opacity: 100%;
+        }
+      }
     }
 
     &_icone {
@@ -196,11 +206,6 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-
-      i {
-        color: $white;
-        font-size: 16px;
-      }
 
       &:focus {
         background-color: $blue-100;
