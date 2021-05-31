@@ -1,0 +1,100 @@
+/* community page */
+.main_community {
+  .card_box {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.16);
+  }
+
+  & .card_box-code {
+    padding: 20px;
+    border-radius: 8px;
+
+    &.green {
+      background-color: rgba(154, 255, 107, 1);
+    }
+
+    &.purple {
+      background-color: rgba(107, 131, 255, 1);
+    }
+
+    &.orange {
+      background-color: rgba(255, 196, 107, 1);
+    }
+
+    &.pink {
+      background-color: rgba(255, 107, 205, 1);
+    }
+  }
+
+  .p_textarea {
+    width: 100%;
+    min-height: 350px;
+    font-size: 14px;
+    font-family: $roboto-mono;
+    background-color: $dark-gray;
+    color: $white;
+    padding: 0 10px;
+    line-height: 20px;
+    border-radius: 0 0 8px 8px;
+    margin-top: -2px;
+  }
+
+  .card_info {
+    margin-top: 20px;
+    padding: 0 20px;
+    font-family: $inter;
+    color: $white;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 15px 0 25px 0;
+    }
+  }
+
+  .card_bottomBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 15px;
+    color: $white;
+    font-family: $inter;
+
+    &_icon {
+      display: flex;
+
+      i {
+        margin-right: 3px;
+      }
+
+      .count {
+        padding: 10px;
+        &:hover {
+          border-radius: 8px;
+          background-color: rgba(255, 255, 255, 0.08);
+
+          & .fa-heart {
+            &:active {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+
+    &_profile {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+        width: 24px;
+      }
+    }
+  }
+}

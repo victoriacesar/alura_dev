@@ -1,0 +1,80 @@
+.form {
+  width: 100%;
+
+  &_title {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.4rem;
+    font-family: $inter;
+    color: $white;
+    margin-bottom: 10px;
+  }
+
+  &_input {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    background-color: $transparent-white;
+    color: $white;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.24);
+    }
+
+    &::placeholder {
+      color: $neutral-white;
+    }
+  }
+
+  &_input-textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+  }
+
+  &_style {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.4rem;
+    font-family: $inter;
+    color: $white;
+    margin: 10px 0;
+  }
+
+  &_input-select {
+    & option {
+      background-color: $dark-blue;
+    }
+  }
+
+  &_input-color {
+    background-color: transparent;
+    height: 55px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: 1 px solid $white;
+  }
+
+  &_btn {
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    color: $dark-gray;
+    background-color: $blue-300;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $blue-200;
+    }
+  }
+}

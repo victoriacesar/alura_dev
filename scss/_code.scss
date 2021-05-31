@@ -1,0 +1,76 @@
+.code {
+  margin-bottom: 30px;
+
+  &_block {
+    background-color: lightcoral;
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  &_circleBar {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: $dark-gray;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &_circle {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 5px;
+
+    &.red {
+      background-color: $mac-red;
+    }
+
+    &.yellow {
+      background-color: $mac-yellow;
+    }
+
+    &.green {
+      background-color: $mac-green;
+    }
+  }
+
+  &_textarea {
+    width: 100%;
+    height: 255px;
+    font-size: 14px;
+    margin-top: -2px;
+    padding: 10px 10px;
+    background-color: $dark-gray;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    outline: none;
+    color: $white;
+    font-family: $roboto-mono;
+  }
+
+  &_btn {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(80, 129, 251, 0.08);
+    color: $white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.5s ease-in-out;
+
+    &:hover {
+      background-color: rgba(80, 129, 251, 0.16);
+    }
+
+    &:focus {
+      background-color: rgba(80, 129, 251, 0.24);
+    }
+  }
+}

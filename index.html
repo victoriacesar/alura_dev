@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Dev</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/dracula.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <img src="assets/img/Logo.svg" alt="Logo" />
+        <div class="nav_menu">
+          <input
+            type="text"
+            name="search"
+            id=""
+            placeholder="Busque por algo"
+            class="nav_search"
+          />
+          <i class="fas fa-search search"></i>
+          <i class="fas fa-bars bars"></i>
+        </div>
+        <div class="nav_profile">
+          <img src="assets/img/Photo.png" alt="Profile photo" />
+          <p class="profile_name">@Victoria</p>
+        </div>
+      </nav>
+
+      <div class="asideLeft">
+        <p class="asideLeft_p">Menu</p>
+        <div class="asideLeft_pages">
+          <div class="asideLeft_icone index">
+            <a href="index.html"><i class="fas fa-code"></i></a>
+          </div>
+          <a class="asideLeft_link index" href="index.html">Editor de código</a>
+        </div>
+        <div class="asideLeft_pages">
+          <div class="asideLeft_icone community">
+            <a href="community.html"><i class="fas fa-users"></i></a>
+          </div>
+          <a class="asideLeft_link community" href="community.html"
+            >Comunidade</a
+          >
+        </div>
+      </div>
+
+      <section class="code">
+        <div class="code_block">
+          <div class="code_circleBar">
+            <div class="code_circle red"></div>
+            <div class="code_circle yellow"></div>
+            <div class="code_circle green"></div>
+          </div>
+          <div class="code_textarea" contenteditable="true">
+            <pre><code class="preview hljs" aria-label="editor"></code></pre>
+          </div>
+        </div>
+
+        <button class="code_btn">Visualizar com o highlight</button>
+      </section>
+
+      <section class="form">
+        <div class="form_projeto">
+          <p class="form_title">Seu Projeto</p>
+          <input
+            class="form_input form_input-nome"
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome do projeto"
+          />
+          <textarea
+            class="form_input form_input-textarea"
+            name="description"
+            id="description"
+          >
+Descrição do seu projeto</textarea
+          >
+        </div>
+        <div class="form_personalizacao">
+          <p class="form_style">Personalização</p>
+          <div class="style_inputs">
+            <select
+              class="form_input form_input-select"
+              name="language"
+              id="language"
+            >
+              <option value="javascript">JavaScript</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+            </select>
+            <input
+              type="color"
+              class="form_input-color"
+              name="color"
+              id="color"
+              value="#ee8080"
+            />
+          </div>
+          <button class="form_btn">Salvar projeto</button>
+        </div>
+      </section>
+    </div>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.0/build/highlight.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
