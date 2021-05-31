@@ -13,11 +13,13 @@ const codeArea = document.querySelector(".code_textarea");
 const language = document.querySelector("#language");
 const btnHighlight = document.querySelector(".code_btn");
 
+const codeEdit = codeArea.querySelector("code");
+console.log(codeEdit);
+
 function changeLanguage() {
   const codeEdit = codeArea.querySelector("code");
-  codeArea.innerHTML = `<code class="preview hljs language-${language.value}" contenteeditable="true" aria-label="editor"></code>`;
+  codeArea.innerHTML = `<code class="preview hljs ${language.value}" contenteeditable="true" aria-label="editor"></code>`;
   codeArea.firstChild.innerText = codeEdit.innerText;
-  console.log(codeEdit);
 }
 
 language.addEventListener("change", () => {
@@ -28,6 +30,7 @@ btnHighlight.addEventListener("click", () => {
   const codeEdit = codeArea.querySelector("code");
   hljs.highlightElement(codeEdit);
 });
+
 /* ---------------------------------------- */
 const btnSave = document.querySelector(".form_btn");
 
