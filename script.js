@@ -14,7 +14,6 @@ const language = document.querySelector("#language");
 const btnHighlight = document.querySelector(".code_btn");
 
 const codeEdit = codeArea.querySelector("code");
-console.log(codeEdit);
 
 function changeLanguage() {
   const codeEdit = codeArea.querySelector("code");
