@@ -114,14 +114,16 @@
   margin-right: 3px;
 }
 .main_community .card_bottomBar_icon .count {
+  display: flex;
+  align-items: center;
   padding: 10px;
+}
+.main_community .card_bottomBar_icon .count img {
+  padding-right: 10px;
 }
 .main_community .card_bottomBar_icon .count:hover {
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.08);
-}
-.main_community .card_bottomBar_icon .count:hover .fa-heart:active {
-  color: red;
 }
 .main_community .card_bottomBar_profile {
   display: flex;

@@ -73,16 +73,17 @@
       }
 
       .count {
+        display: flex;
+        align-items: center;
         padding: 10px;
+
+        img {
+          padding-right: 10px;
+        }
+
         &:hover {
           border-radius: 8px;
           background-color: rgba(255, 255, 255, 0.08);
-
-          & .fa-heart {
-            &:active {
-              color: red;
-            }
-          }
         }
       }
     }
