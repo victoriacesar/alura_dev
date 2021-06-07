@@ -55,7 +55,6 @@ function setCard() {
     },
   };
 
-  console.log(project);
   return project;
 }
 
@@ -72,3 +71,26 @@ btnSave.addEventListener("click", (event) => {
   let project = setCard();
   saveLocalStorage(project);
 });
+
+function captureImg() {
+  const capture = document.querySelector(".code_block");
+  html2canvas(capture)
+    .then((canvas) => {
+      document.body.appendChild(canvas);
+      canvas.style.display = "none";
+      return canvas;
+    })
+    .then((canvas) => {
+      const image = canvas
+        .toDataURL("image/png")
+        .replace("image/png", "image/octet-stream");
+      const a = document.createElement("a");
+      a.setAttribute("download", "code.png");
+      a.setAttribute("href", image);
+      a.click();
+      canvas.remove();
+    });
+}
+
+const btnExport = document.querySelector(".code_btnExport");
+btnExport.addEventListener("click", captureImg);

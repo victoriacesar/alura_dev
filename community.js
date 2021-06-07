@@ -2,7 +2,7 @@ const mainCommunity = document.querySelector(".main_community_card");
 
 window.onload = function () {
   showProjects();
-  console.log(localStorage.length);
+  highlightCode();
 };
 
 function showProjects() {
@@ -21,6 +21,12 @@ function showProjects() {
   }
 }
 
+function highlightCode() {
+  document.querySelectorAll(".p_textarea.code").forEach((el) => {
+    hljs.highlightElement(el);
+  });
+}
+
 function cardStyle(project) {
   const card = `
   <div class="card_box">
@@ -30,11 +36,11 @@ function cardStyle(project) {
         <div class="code_circle yellow"></div>
         <div class="code_circle green"></div>
       </div>
-      <p class="p_textarea" data-id="${project.id}"></p>
+      <pre><code class="p_textarea code" data-id="${project.id}"></p></code></pre>
     </div>
     <div class="card_info">
       <h2>${project.projectData.name}</h2>
-      <p>${project.projectData.description}</p>
+      <pre><p>${project.projectData.description}</p></pre>
     </div>
     <div class="card_bottomBar">
       <div class="card_bottomBar_icon">
